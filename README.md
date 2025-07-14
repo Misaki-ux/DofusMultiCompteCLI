@@ -31,6 +31,9 @@ https://github.com/user-attachments/assets/512e0f88-f588-4f5d-97b6-b39f6e5c3b05
 ```bash
 # Clone the repo
 git clone https://github.com/Misaki-ux/DofusMultiCompteCLI.git
+pip install -r ./requirements.txt
+ - All external dependencies are properly declared in [`requirements.txt`](./requirements.txt)
+
 cd DofusMultiCompteCLI
 
 # Python 3.12 start

@@ -1,0 +1,350 @@
+/* ===== DARK THEME ===== */
+/* dark.qss */
+/*
+ * A dark theme for Qt applications with complete datagrid support
+ */
+
+QWidget {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Consolas;
+    font-size: 14px;
+}
+
+QMainWindow {
+    border: 1px solid #555;
+}
+
+QTabWidget::pane {
+    border: 1px solid #444;
+}
+
+QTabBar::tab {
+    background: #333;
+    padding: 10px;
+    border: 1px solid #555;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 8ex;
+}
+
+QTabBar::tab:selected {
+    background: #111;
+    border-bottom: 2px solid #00aced;
+}
+
+QTabBar::tab:hover {
+    background: #444;
+}
+
+QTabBar::tab:!selected {
+    margin-top: 2px;
+}
+
+QPushButton {
+    background-color: #333;
+    border: 1px solid #555;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+QPushButton:hover {
+    background-color: #444;
+}
+
+QPushButton:pressed {
+    background-color: #222;
+}
+
+/* KeybindButton Styling - Dark theme */
+KeybindButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #333, stop: 0.5 #444, stop: 1 #333);
+    border: 2px solid #666;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 6px 12px;
+    min-height: 25px;
+}
+
+KeybindButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #444, stop: 0.5 #555, stop: 1 #444);
+    border-color: #00aced;
+}
+
+KeybindButton:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #222, stop: 0.5 #333, stop: 1 #222);
+    border-color: #444;
+}
+
+/* KeyCaptureDialog Styling - Dark theme */
+#KeyCaptureDialog {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #222, stop: 0.5 #1a1a1a, stop: 1 #222);
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+#KeyCaptureLabel {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 11pt;
+    background: transparent;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #222, stop: 0.5 #333, stop: 1 #222);
+}
+
+#KeyCaptureLabelSuccess {
+    color: #00ff00;
+    font-weight: bold;
+    font-size: 11pt;
+    background: transparent;
+    padding: 10px;
+    border: 2px solid #00ff00;
+    border-radius: 6px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2a2a2a, stop: 0.5 #3a3a3a, stop: 1 #2a2a2a);
+}
+
+QCheckBox {
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QComboBox {
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 2px;
+    min-width: 6em;
+    background-color: #333;
+    color: #ffffff;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #555;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #555;
+    background-color: #222;
+    selection-background-color: #00aced;
+    selection-color: #ffffff;
+}
+
+/* DataGrid Styling */
+QTableWidget, QTableView {
+    background-color: #1e1e1e;
+    alternate-background-color: #2a2a2a;
+    gridline-color: #555;
+    border: 1px solid #555;
+    selection-background-color: #00aced;
+    selection-color: #ffffff;
+}
+
+QTableWidget::item, QTableView::item {
+    border: 1px solid #555;
+    padding: 3px;
+    color: #ffffff;
+}
+
+QTableWidget::item:selected, QTableView::item:selected {
+    background-color: #00aced;
+    color: #ffffff;
+}
+
+QTableWidget::item:hover, QTableView::item:hover {
+    background-color: #444;
+}
+
+QHeaderView::section {
+    background-color: #333;
+    color: #ffffff;
+    padding: 5px;
+    border: 1px solid #555;
+    font-weight: bold;
+}
+
+QHeaderView::section:hover {
+    background-color: #444;
+}
+
+QScrollBar:vertical {
+    background-color: #333;
+    width: 15px;
+    border: 1px solid #555;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #666;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #777;
+}
+
+QScrollBar:horizontal {
+    background-color: #333;
+    height: 15px;
+    border: 1px solid #555;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #666;
+    min-width: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #777;
+}
+/* DARK THEME Configuration Grid Styles */
+
+/* Main grid container */
+#StyledConfigGrid {
+    background-color: transparent;
+}
+
+/* Header styling */
+#ConfigGridHeader {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #404040, stop: 0.3 #4f4f4f, stop: 0.7 #5e5e5e, stop: 1 #404040);
+    border: 2px solid #616161;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+#ConfigHeaderLabel {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 11pt;
+    background: transparent;
+}
+
+/* Row styling - Even rows */
+#StyledConfigRow[rowType="even"] {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #3a3a3a, stop: 0.3 #3d3d3d, stop: 0.7 #404040, stop: 1 #3a3a3a);
+    border: 1px solid #4f4f4f;
+    border-radius: 8px;
+    margin: 2px;
+}
+
+#StyledConfigRow[rowType="even"]:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #4a4a4a, stop: 0.3 #4d4d4d, stop: 0.7 #505050, stop: 1 #4a4a4a);
+    border: 2px solid #5c5c5c;
+}
+
+#StyledConfigRow[rowType="even"] #ConfigRowLabel {
+    color: #e8e8e8;
+    font-weight: bold;
+    font-size: 10pt;
+    background: transparent;
+}
+
+/* Row styling - Odd rows */
+#StyledConfigRow[rowType="odd"] {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2b2b2b, stop: 0.3 #2e2e2e, stop: 0.7 #313131, stop: 1 #2b2b2b);
+    border: 1px solid #424242;
+    border-radius: 8px;
+    margin: 2px;
+}
+
+#StyledConfigRow[rowType="odd"]:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #3b3b3b, stop: 0.3 #3e3e3e, stop: 0.7 #414141, stop: 1 #3b3b3b);
+    border: 2px solid #5c5c5c;
+}
+
+#StyledConfigRow[rowType="odd"] #ConfigRowLabel {
+    color: #d8d8d8;
+    font-weight: bold;
+    font-size: 10pt;
+    background: transparent;
+}
+
+/* Section styling */
+#StyledConfigSection {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #2b2b2b, stop: 0.5 #242424, stop: 1 #2b2b2b);
+    border: 2px solid #424242;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#ConfigSectionTitle {
+    color: #b8b8b8;
+    font-weight: bold;
+    font-size: 12pt;
+    padding: 5px;
+    background: transparent;
+    border-bottom: 2px solid #5c5c5c;
+    margin-bottom: 10px;
+}
+
+/* SaveButton Styling - Dark theme */
+QPushButton#SaveButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #444, stop: 0.5 #333, stop: 1 #222);
+    border: 2px solid #555;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 8px 16px;
+    min-height: 30px;
+}
+
+QPushButton#SaveButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #555, stop: 0.5 #444, stop: 1 #333);
+    border: 2px solid #666;
+}
+
+QPushButton#SaveButton:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #222, stop: 0.5 #111, stop: 1 #000);
+    border: 2px solid #555;
+}
+
+/* Status Label Styling - Dark theme */
+QLabel#ConfigStatusSuccess {
+    background: #1d3d1d;
+    border: 2px solid #2d5d2d;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px;
+}
+
+QLabel#ConfigStatusError {
+    background: #3d1d1d;
+    border: 2px solid #5d2d2d;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px;
+}

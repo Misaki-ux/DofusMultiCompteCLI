@@ -1,0 +1,356 @@
+/* ===== GREEN THEME ===== */
+/* green.qss */
+/*
+ * A green theme for Qt applications with complete datagrid support
+ */
+
+QWidget {
+    background-color: #223b2e; /* Dark green */
+    color: #e0e0e0; /* Light grey text */
+    font-family: "Segoe UI", "Arial", "sans-serif";
+    font-size: 9pt;
+}
+
+QMainWindow {
+    background-color: #1b2e24; /* Even darker green */
+    border: 1px solid #4b6050;
+}
+
+QTabWidget::pane {
+    border-top: 2px solid #4b6050; /* Lighter green border */
+}
+
+QTabBar::tab {
+    background: #3a4a3a; /* Medium green */
+    border: 1px solid #4b6050;
+    border-bottom-color: #4b6050;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 8ex;
+    padding: 5px;
+    color: #c0e0d0; /* Light green text */
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: #4f5a4f; /* Lighter green for selection/hover */
+}
+
+QTabBar::tab:selected {
+    border-color: #6b7b6b;
+    border-bottom-color: #4f5a4f;
+}
+
+QTabBar::tab:!selected {
+    margin-top: 2px;
+}
+
+QPushButton {
+    background-color: #4f5a4f;
+    border: 1px solid #6b7b6b;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #e0e0e0;
+}
+
+QPushButton:hover {
+    background-color: #5c6b5c;
+    border-color: #7b8b7b;
+}
+
+QPushButton:pressed {
+    background-color: #3a4a3a;
+}
+
+/* KeybindButton Styling - Converted from purple to green theme */
+KeybindButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #3a4a3a, stop: 0.5 #4f5a4f, stop: 1 #3a4a3a);
+    border: 2px solid #6b7b6b;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 6px 12px;
+    min-height: 25px;
+}
+
+KeybindButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #5c6b5c, stop: 0.5 #6f7f6f, stop: 1 #5c6b5c);
+    border-color: #7b8b7b;
+}
+
+KeybindButton:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2e3a2e, stop: 0.5 #3a4a3a, stop: 1 #2e3a2e);
+    border-color: #4f5a4f;
+}
+
+/* KeyCaptureDialog Styling - Converted from purple to green theme */
+#KeyCaptureDialog {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #2e3a2e, stop: 0.5 #241b2e, stop: 1 #2e3a2e);
+    border: 2px solid #4f5a4f;
+    border-radius: 10px;
+}
+
+#KeyCaptureLabel {
+    color: #c8d8c0;
+    font-weight: bold;
+    font-size: 11pt;
+    background: transparent;
+    padding: 10px;
+    border: 1px solid #3a4a3a;
+    border-radius: 6px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2e3a2e, stop: 0.5 #3a4a3a, stop: 1 #2e3a2e);
+}
+
+#KeyCaptureLabelSuccess {
+    color: #90ee90;
+    font-weight: bold;
+    font-size: 11pt;
+    background: transparent;
+    padding: 10px;
+    border: 2px solid #90ee90;
+    border-radius: 6px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2d4a2d, stop: 0.5 #3a5a3a, stop: 1 #2d4a2d);
+}
+
+QCheckBox {
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QComboBox {
+    border: 1px solid #6b7b6b;
+    border-radius: 4px;
+    padding: 2px;
+    min-width: 6em;
+    background-color: #4f5a4f;
+    color: #e0e0e0;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #6b7b6b;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #6b7b6b;
+    background-color: #3a4a3a;
+    selection-background-color: #5c6b5c;
+    selection-color: #e0e0e0;
+}
+
+/* DataGrid Styling */
+QTableWidget, QTableView {
+    background-color: #223b2e;
+    alternate-background-color: #1e3428;
+    gridline-color: #4b6050;
+    border: 1px solid #4b6050;
+    selection-background-color: #5c6b5c;
+    selection-color: #ffffff;
+}
+
+QTableWidget::item, QTableView::item {
+    border: 1px solid #4b6050;
+    padding: 3px;
+    color: #e0e0e0;
+}
+
+QTableWidget::item:selected, QTableView::item:selected {
+    background-color: #5c6b5c;
+    color: #ffffff;
+}
+
+QTableWidget::item:hover, QTableView::item:hover {
+    background-color: #4f5a4f;
+}
+
+QHeaderView::section {
+    background-color: #3a4a3a;
+    color: #c0e0d0;
+    padding: 5px;
+    border: 1px solid #4b6050;
+    font-weight: bold;
+}
+
+QHeaderView::section:hover {
+    background-color: #4f5a4f;
+}
+
+QScrollBar:vertical {
+    background-color: #3a4a3a;
+    width: 15px;
+    border: 1px solid #4b6050;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #6b7b6b;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #7b8b7b;
+}
+
+QScrollBar:horizontal {
+    background-color: #3a4a3a;
+    height: 15px;
+    border: 1px solid #4b6050;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #6b7b6b;
+    min-width: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #7b8b7b;
+}
+
+#ErrorDialog {
+    background-color: #223b2e;
+    border: 1px solid #6b7b6b;
+}
+
+/* Main grid container */
+#StyledConfigGrid {
+    background-color: transparent;
+}
+
+/* Header styling */
+#ConfigGridHeader {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #70805c, stop: 0.3 #7f8f6b, stop: 0.7 #8e9e7a, stop: 1 #70805c);
+    border: 2px solid #91a17e;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+#ConfigHeaderLabel {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 11pt;
+    background: transparent;
+}
+
+/* Row styling - Even rows */
+#StyledConfigRow[rowType="even"] {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #4a5a4a, stop: 0.3 #4d5d4d, stop: 0.7 #506050, stop: 1 #4a5a4a);
+    border: 1px solid #65704f;
+    border-radius: 8px;
+    margin: 2px;
+}
+
+#StyledConfigRow[rowType="even"]:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #5a6a5a, stop: 0.3 #5d6d5d, stop: 0.7 #607060, stop: 1 #5a6a5a);
+    border: 2px solid #70805c;
+}
+
+#StyledConfigRow[rowType="even"] #ConfigRowLabel {
+    color: #d8e8d0;
+    font-weight: bold;
+    font-size: 10pt;
+    background: transparent;
+}
+
+/* Row styling - Odd rows */
+#StyledConfigRow[rowType="odd"] {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #3b4a3b, stop: 0.3 #3e4d3e, stop: 0.7 #415041, stop: 1 #3b4a3b);
+    border: 1px solid #4f6042;
+    border-radius: 8px;
+    margin: 2px;
+}
+
+#StyledConfigRow[rowType="odd"]:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #4b5a4b, stop: 0.3 #4e5d4e, stop: 0.7 #516051, stop: 1 #4b5a4b);
+    border: 2px solid #70805c;
+}
+
+#StyledConfigRow[rowType="odd"] #ConfigRowLabel {
+    color: #c8d8c0;
+    font-weight: bold;
+    font-size: 10pt;
+    background: transparent;
+}
+
+/* Section styling */
+#StyledConfigSection {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #3b4a3b, stop: 0.5 #30413b, stop: 1 #3b4a3b);
+    border: 2px solid #4f6042;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#ConfigSectionTitle {
+    color: #9cccb8;
+    font-weight: bold;
+    font-size: 12pt;
+    padding: 5px;
+    background: transparent;
+    border-bottom: 2px solid #70805c;
+    margin-bottom: 10px;
+}
+
+/* SaveButton Styling */
+QPushButton#SaveButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #5c6b5c, stop: 0.5 #4f5a4f, stop: 1 #424d42);
+    border: 2px solid #6b7b6b;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 8px 16px;
+    min-height: 25px;
+}
+
+QPushButton#SaveButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #6b7b6b, stop: 0.5 #5c6b5c, stop: 1 #4f5a4f);
+    border-color: #7b8b7b;
+}
+
+QPushButton#SaveButton:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #3a4a3a, stop: 0.5 #2e3a2e, stop: 1 #241e24);
+}
+
+/* Status Label Styling */
+QLabel#StatusSuccess {
+    background-color: #2d4a2d;
+    border: 2px solid #4a6a4a;
+    border-radius: 4px;
+    color: #90ee90;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+QLabel#StatusError {
+    background-color: #4a2d2d;
+    border: 2px solid #6a4a4a;
+    border-radius: 4px;
+    color: #ff6b6b;
+    font-weight: bold;
+    padding: 5px 10px;
+}

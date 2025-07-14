@@ -44,8 +44,6 @@ py ./main.py
 
 This section provides a detailed list of all external libraries, frameworks, and referenced code used in this project. It ensures transparency, license compliance, and proper acknowledgment of contributors and third-party sources.
 
-# IMPORT CITATION FROM ALL METHOD DEVELOPER WHERE WE TOOK CODE FROM
-
 ## External Dependencies and Libraries
 
 ### Main Framework

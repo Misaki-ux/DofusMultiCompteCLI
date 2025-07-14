@@ -37,10 +37,10 @@ py ./main.py
 ./build.bat
 (will export a dist file and build you the project into a .exe app)
 
-# Code Citations
+## 🙏 Code Citations
 
 ## License: GPL_3_0
-https://github.com/d1zzy/gogbot/tree/60f078ae278d20b71ca8779491baae6b29d67724/lib/keygen.py
+## https://github.com/d1zzy/gogbot/tree/60f078ae278d20b71ca8779491baae6b29d67724/lib/keygen.py
 
 ```
 , wintypes.LONG),

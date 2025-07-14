@@ -33,5 +33,48 @@ cd DofusMultiCompteCLI
 # Python 3.12 start
 
 py ./main.py
-# Build
- /build.bat
+# Build (assuming you are on windows and got all installed requirements)
+./build.bat
+(will export a dist file and build you the project into a .exe app)
+
+# Code Citations
+
+## License: GPL_3_0
+https://github.com/d1zzy/gogbot/tree/60f078ae278d20b71ca8779491baae6b29d67724/lib/keygen.py
+
+```
+, wintypes.LONG),
+                ("dy", wintypes.LONG),
+                ("mouseData", wintypes.DWORD),
+                ("dwFlags", wintypes.DWORD),
+                ("time", wintypes.DWORD),
+                ("dwExtraInfo", wintypes.ULONG_PTR)
+```
+
+
+## License: unknown
+https://github.com/LolnationCH/YAPAP/tree/cc08c1f3fce2579925c754f91778dd46760fc248/Windows/Structs.py
+
+```
+KEYBDINPUT(ctypes.Structure):
+    _fields_ = [("wVk", wintypes.WORD),
+                ("wScan", wintypes.WORD),
+                ("dwFlags", wintypes.DWORD),
+                ("time", wintypes.DWORD),
+                ("dwExtraInfo",
+```
+
+
+## License: MIT
+https://github.com/MarkMoretto/python-examples-main/tree/f08f2fe05f30ffc0f2fe369bc1f4da3564702fdf/windows/move_cursor.py
+
+```
+.Structure):
+    _fields_ = [("dx", wintypes.LONG),
+                ("dy", wintypes.LONG),
+                ("mouseData", wintypes.DWORD),
+                ("dwFlags", wintypes.DWORD),
+                ("time", wintypes.DWORD
+```
+
+
